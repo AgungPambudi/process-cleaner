@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    
+    <LinearLayout
+    	android:id="@+id/layout"
+    	android:layout_width="match_parent"
+    	android:layout_height="40px"
+    	android:layout_gravity="fill_horizontal"
+    	android:layout_alignParentTop="true"
+    	android:background="#404040"
+    	>
+
+    	<Button android:id="@+id/refresh"
+    		android:layout_weight="1"
+    		android:text="@string/menu_refresh"
+    		android:layout_width="match_parent"
+    		android:layout_height="match_parent"
+    		android:layout_gravity="left"
+    		/>
+    
+    	<Button android:id="@+id/showall"
+    		android:layout_weight="1"
+    		android:text="@string/menu_showall"
+    		android:layout_width="match_parent"
+    		android:layout_height="match_parent"
+    		android:layout_gravity="right"
+    		/>
+	</LinearLayout>
+	
+	<TextView 
+		android:textAppearance="?android:attr/textAppearanceSmall"  
+   		android:layout_width="fill_parent" 
+   		android:layout_height="wrap_content" 
+   		android:textColor="#B8B8B8"
+   		android:textColorHighlight="#B8B8B8"
+   		android:background="#404040"
+   		android:paddingBottom="2dp"
+   		android:gravity="center"
+   		android:text="@string/app_help"
+   		/>
+	
+    <ListView android:id="@android:id/list"
+  		android:layout_width="fill_parent"
+  		android:layout_height="wrap_content"
+  		android:divider="#b5b5b5"
+  		android:dividerHeight="1dp"
+  		android:listSelector="@drawable/list_selector"
+  		/>
+  	
+</LinearLayout>
